@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="waitList.css">
+    <title>EduVue</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1 class="title">Join EduVue</h1>
+        <h2 class="subtitle">Elevating Educational Journalling
+            with the Power of AI</h2>
+        <form id="signup-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="institution" placeholder="Institution" required>
+            <button type="submit" id="submit-btn">Enter the waitlist</button>
+        </form>
+        <div id="success-message" class="hidden">
+            <div id="check-mark">&#10003;</div>
+            <p>You have joined the waitlist! You will be emailed at <span id="email-display"></span>.</p>
+        </div>
+    </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
