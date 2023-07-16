@@ -1,13 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    color: #000005;
+    margin: 0;
+    padding: 0;
+}
+
 #signup-form input {
     display: block;
     width: 80%;
     height: 40px;
     margin: 20px auto;
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 1rem;
-    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid rgba(119, 119, 122, 0.6);
     border-radius: 20px;
-    background: #9FE7CA;
+    background: #FFFFFF;
+    color: #000005;
+    transition: border-color 0.5s, background 0.5s;
+}
+
+#signup-form input:focus {
+    outline: none;
+    border-color: #3640B5;
+}
+
+#signup-form input::placeholder {
+    color: #77777A;
 }
 
 #submit-btn {
@@ -15,7 +35,9 @@
     width: 80%;
     height: 40px;
     margin: 20px auto;
-    font-size: 1rem;
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
     border: none;
     border-radius: 20px;
     background: #77777A;

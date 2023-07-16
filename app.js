@@ -4,12 +4,12 @@ particlesJS('particles-js',
     "number": {
       "value": 80,
       "density": {
-        "enable": true,
+        "enable": false,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#FBDE44"
+      "value": "#222869"
     },
     "shape": {
       "type": "circle",
@@ -20,6 +20,9 @@ particlesJS('particles-js',
       "polygon": {
         "nb_sides": 5
       },
+    },
+    "opacity": {
+      "value": 0.6
     },
     "size": {
       "value": 5,
@@ -40,7 +43,7 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 5,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -50,45 +53,6 @@ particlesJS('particles-js',
         "enable": false,
         "rotateX": 600,
         "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
       }
     }
   },
@@ -106,7 +70,8 @@ document.getElementById("submit-btn").addEventListener("click", function(event){
   if(name === "" || email === "" || institution === ""){
       alert("All fields must be filled out")
   } else {
-      // Here you can add code to send the data to the backend
+      submitForm(name, email, institution)  
+
       document.getElementById("email-display").textContent = email;
       document.getElementById("success-message").classList.remove("hidden");
   }
